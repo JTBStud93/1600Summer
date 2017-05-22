@@ -3,11 +3,12 @@ using System.Collections;
 
 public class Birds : Animal {
 
-	//PROPERTIES
+    //PROPERTIES
     //Feathers
     //Beaks
     //Wings
     //Color
+    public Color featherColor = Color.red;
 
 
     //Fly
