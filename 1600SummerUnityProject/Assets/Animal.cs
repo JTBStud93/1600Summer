@@ -6,21 +6,56 @@ public class Animal : MonoBehaviour {
     //PROPERTIES (things they are or have)
     //BodySegments
     public string[] bodySegments = { "Head", "Abs", "Thorax" };
+    public string animalName = "Jenny";
     //Health
     public int health = 100;
     //Speed
     public float speed = 0.0f;
     //Size
     public string size = "Big";
+    public bool canEat = false;
 
     public Color baseColor;
 
-	//FUNCTIONS (things they do)
+    //FUNCTIONS (things they do)
     //Breathe
+    public string animalLungs = "Oxygen";
+    public bool canBreathe = false;
     //Reproduce
     //Eat
     //Move
     //Die
     //Grow
+    void Start ()
+    {
+        if (!canEat)
+        {
+            print(this.name + " can eat.");
+        }
+        else
+        {
+            print(this.name + " can't eat.");
+        }
+
+        if (2 + 5 == 7)
+        {
+            print(7);
+        }
+
+        if (animalName == "Jen")
+        {
+            print("Jen");
+        }
+
+        if (4 + 4 == 8)
+        {
+            print(8);
+        }
+
+        if (animalLungs == "Oxygen")
+        {
+            print("Oxygen");
+        }
+    }
 
 }
