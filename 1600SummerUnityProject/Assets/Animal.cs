@@ -12,8 +12,8 @@ public class Animal : MonoBehaviour {
     //Speed
     public float speed = 0.0f;
     //Size
-    public string size = "Big";
-    public bool canEat = false;
+    public string size;
+    public bool canEat;
 
     public Color baseColor;
 
@@ -42,9 +42,9 @@ public class Animal : MonoBehaviour {
             print(7);
         }
 
-        if (animalName == "Jen")
+        if (animalName != "Jen")
         {
-            print("Jen");
+            print(animalName);
         }
 
         if (4 + 4 == 8)
@@ -56,6 +56,22 @@ public class Animal : MonoBehaviour {
         {
             print("Oxygen");
         }
+
+        if (speed > 0f)
+        {
+            speed %= 2f;
+        }
+
+        if (health > 0)
+        {
+            health %= 2;
+            print(health);
+        }
+        else
+        {
+            Debug.LogError("You can't Divide by Zer0.");
+        }
+        
     }
 
 }
