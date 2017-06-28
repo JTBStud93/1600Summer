@@ -25,22 +25,22 @@ public void AddClick(){
 	result.text = num.ToString();
 }
 
-/*
+
 public void SubtractClick(){
-	int num = int.Parse(in3.text) - int.Parse(in4.text);
+	int num = int.Parse(in1.text) - int.Parse(in2.text);
 	result.text = num.ToString();
 }
 
 public void MultiplyClick(){
-	int num = int.Parse(in5.text) * int.Parse(in6.text);
+	int num = int.Parse(in1.text) * int.Parse(in2.text);
 	result.text = num.ToString();
 }
 
 public void DivideClick(){
-	int num = int.Parse(in7.text) / int.Parse(in8.text);
+	int num = int.Parse(in1.text) / int.Parse(in2.text);
 	result.text = num.ToString();
 }
-*/
+
 
 
 
