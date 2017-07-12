@@ -7,7 +7,16 @@ public class Follow : MonoBehaviour {
 	public Transform target;
 
 	void Update () {
-		transform.LookAt(target);
-		transform.Translate(Vector3.forward*-moveSpeed*Time.deltaTime);
+
+	}
+
+	void OnTriggerStay(Collider other)
+	{
+	
+		if(other.gameObject.name == "Player"){
+					Debug.Log("Player has entered chicken's trigger");
+					transform.LookAt(target);
+					transform.Translate(Vector3.forward*-moveSpeed*Time.deltaTime);
+		}
 	}
 }
