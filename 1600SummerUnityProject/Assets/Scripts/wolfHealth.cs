@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class wolfHealth : MonoBehaviour {
 
 	public int currentHealth;
-	public int maxHealth = 50;
+	public int maxHealth = 3;
 	public Transform spawnPoint;
 	public int points;
 
