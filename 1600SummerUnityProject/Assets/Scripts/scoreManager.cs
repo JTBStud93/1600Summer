@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class scoreManager : MonoBehaviour {
 
 	public static int score;
+	public int winScore;
 
 	public Text text;
 
@@ -18,6 +20,11 @@ public class scoreManager : MonoBehaviour {
 			score = 0;
 
 		text.text =" " + score;
+
+		if(score >= winScore){
+			SceneManager.LoadScene("WinScene");
+			print("You Win!");
+		}
 
 	}
 

@@ -13,6 +13,12 @@ public class Destroy : MonoBehaviour {
 			transform.position = spawnPoint.position;
 			transform.rotation = spawnPoint.rotation;
 		}
+
+		if(other.gameObject.name == "Wolf"){
+			//Destroy(gameObject);
+			transform.position = spawnPoint.position;
+			transform.rotation = spawnPoint.rotation;
+		}
 	}
 
 }

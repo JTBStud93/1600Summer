@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class playerHealth : MonoBehaviour {
 
 	public const int maxHealth = 100;
 	public int currentHealth =maxHealth;
-	public Transform spawnPoint;
+	//public Transform spawnPoint;
 
 	public Text hp;
 	public Text maxHP;
@@ -24,8 +25,9 @@ public class playerHealth : MonoBehaviour {
 		{
 			currentHealth=0;
 			print("You're Dead! Game Over!");
-			transform.position = spawnPoint.position;
-			transform.rotation = spawnPoint.rotation;
+			SceneManager.LoadScene("LoseScene");
+			/*transform.position = spawnPoint.position;
+			transform.rotation = spawnPoint.rotation;*/
 
 		}
 	}
