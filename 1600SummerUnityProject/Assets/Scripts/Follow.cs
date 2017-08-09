@@ -5,6 +5,7 @@ public class Follow : MonoBehaviour {
 	public Rigidbody enemy;
 	public float moveSpeed;
 	public Transform target;
+	public Transform theWolf;
 
 	void Update () {
 
@@ -17,6 +18,12 @@ public class Follow : MonoBehaviour {
 					Debug.Log("Player has entered chicken's trigger");
 					transform.LookAt(target);
 					transform.Translate(Vector3.forward*-moveSpeed*Time.deltaTime);
+		}
+
+		if(other.gameObject.name =="Wolf"){
+			Debug.Log("Wolf has entered chicken's trigger");
+			transform.LookAt(theWolf);
+			transform.Translate(Vector3.forward*-moveSpeed*Time.deltaTime);
 		}
 	}
 }
